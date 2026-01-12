@@ -34,7 +34,7 @@ cmake --build build --config Release
 ### 3️⃣ Run the demo
 ```bash
 cd build/Release
-example.exe
+colmap2pba.exe
 ```
 
 💡 Note:
