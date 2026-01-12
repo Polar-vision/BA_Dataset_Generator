@@ -38,11 +38,11 @@ example.exe
 ```
 
 💡 Note:
-Before building and running the demo, make sure that OpenCV has been successfully built and installed. 
-In addition, please add the following directory to your system PATH environment variable: 
+Before building and running the demo, make sure that OpenCV has been successfully built and installed.  
+In addition, please add the following directory to your system PATH environment variable:  
 
 ```bash
 <path_to_opencv>/build/x64/vc64/bin
-```bash
+```
 
 This ensures that the required OpenCV runtime DLLs can be found at execution time.
