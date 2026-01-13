@@ -3,8 +3,7 @@
 (`cameras.txt`, `images.txt`, `points3D.txt`) into a unified dataset format suitable for **Bundle Adjustment (BA)** and related optimization pipelines.
 
 ## 📂 Data Format  
-Each dataset is organized using the following structure:
-**Intrinsics (cal.txt)**  
+Each dataset is organized using the following structure: 
 ### 📐 Intrinsics (`cal.txt`)
 
 Contains the camera intrinsic parameters for each camera:
