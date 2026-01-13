@@ -2,7 +2,7 @@
 **BA_Dataset_Generator:** This tool is designed to convert camera and reconstruction results exported from **COLMAP**
 (`cameras.txt`, `images.txt`, `points3D.txt`) into a unified dataset format suitable for **Bundle Adjustment (BA)** and related optimization pipelines.
 
-## 📂 Data Format  
+## 📂 Dataset Format  
 Each dataset is organized using the following structure: 
 ### 📐 Intrinsics (`cal.txt`)
 
@@ -92,3 +92,24 @@ In addition, please add the following directory to your system PATH environment 
 ```
 
 This ensures that the required OpenCV runtime DLLs can be found at execution time.
+
+## 📥 Demo Dataset
+
+To help you quickly test the full pipeline, we provide a demo dataset
+output from **COLMAP**.
+
+### 🔗 Download
+- **Demo dataset (COLMAP export):**  
+  https://pan.quark.cn/s/c3a3f7e7cfa9
+
+### 📂 Contents
+After extraction, the dataset directory should contain:
+Colmap_Output/
+├── cameras.txt
+├── images.txt
+└── points3D.txt
+
+### ▶️ Usage
+Place the extracted dataset in any directory and run the demo executable
+with the corresponding file paths.
+
