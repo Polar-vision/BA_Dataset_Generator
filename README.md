@@ -104,10 +104,10 @@ output from **COLMAP**.
 
 ### 📂 Contents
 After extraction, the dataset directory should contain:
-Colmap_Output/
-├── cameras.txt
-├── images.txt
-└── points3D.txt
+Colmap_Output/  
+├── cameras.txt  
+├── images.txt  
+└── points3D.txt  
 
 ### ▶️ Usage
 Place the extracted dataset in any directory and run the demo executable
