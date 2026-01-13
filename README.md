@@ -1,5 +1,52 @@
 # 🚀 Building from Source
-**BA_Dataset_Generator:** A flexible and extensible tool for generating synthetic and real-world  datasets for Bundle Adjustment (BA) research and evaluation.
+**BA_Dataset_Generator:** This tool is designed to convert camera and reconstruction results exported from **COLMAP**
+(`cameras.txt`, `images.txt`, `points3D.txt`) into a unified dataset format suitable for **Bundle Adjustment (BA)** and related optimization pipelines.
+
+## 📂 Data Format  
+Each dataset is organized using the following structure:
+**Intrinsics (cal.txt)**  
+### 📐 Intrinsics (`cal.txt`)
+
+Contains the camera intrinsic parameters for each camera:
+
+- **fx, fy** — focal lengths  
+- **cx, cy** — principal point coordinates  
+
+Each entry corresponds to one camera.
+
+---
+
+### 🎥 Extrinsics (`Cam.txt`)
+
+Contains the camera pose parameters, including:
+
+- **Euler angles**
+  - **ez** — rotation around the z-axis  
+  - **ey** — rotation around the y-axis  
+  - **ex** — rotation around the x-axis  
+- **Perspective center**
+  - **Xc, Yc, Zc**
+- **Camera ID**
+
+---
+
+### 🌍 3D Points (`XYZ.txt`)
+
+Lists the reconstructed 3D object points:
+
+- **X, Y, Z** coordinates for each point.
+
+---
+
+### 🔗 Feature Tracks (`Feature.txt`)
+
+Each line represents a feature track observed across multiple images, including:
+
+- Number of observing views  
+- Corresponding image indices  
+- Image coordinates **(u, v)** in each image  
+
+This file encodes the 2D–3D observation relationships required for Bundle Adjustment.
 
 ## 🖥 Tested Platforms
 This project has been tested on:
