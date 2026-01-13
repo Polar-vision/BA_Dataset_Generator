@@ -109,7 +109,31 @@ Colmap_Output/
 ├── images.txt  
 └── points3D.txt  
 
+
 ### ▶️ Usage
 Place the extracted dataset in any directory and run the demo executable
 with the corresponding file paths.
+
+---
+
+### 🛠️ Generate Your Own BA Dataset
+
+If you want to generate a **BA dataset from your own image set**,  
+please follow the steps below:
+
+1. Download and install **COLMAP**:  
+   https://github.com/colmap/colmap
+
+2. Use COLMAP to process your image collection (feature extraction, matching, and reconstruction).
+
+3. Export the reconstruction results from COLMAP, and make sure the following files are generated:
+   - `cameras.txt`
+   - `images.txt`
+   - `points3D.txt`
+
+4. Provide these three files as input to **BA_Dataset_Generator**.
+
+The tool will convert the COLMAP outputs into a **clean, lightweight, and easy-to-use BA dataset format**,  
+which can be directly used for Bundle Adjustment and related optimization pipelines.
+
 
